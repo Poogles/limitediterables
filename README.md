@@ -9,7 +9,7 @@ target = range(100)
 slow_iter = LimitedIterable(target, limit=50)  # This gives us 50 messages a second.
 
 for i in slow_iter:
-	print(i)
+    print(i)
 
 ```
 
