@@ -6,9 +6,14 @@ class LimitedIterable(collections.abc.Iterator):
 
     def __init__(self, target, limit=None):
         self.target = iter(target)
-        self.limit = limit
         self._last_call = 0
-        self._pause_time = 1 / limit  # time between each iteration.
+        # TODO: Make this less horrible.
+        if limit:
+            self.limit = abs(limit)
+            self._pause_time = 1 / self.limit  # time between each iteration.
+        else:
+            self.limit = None
+            self._pause_time = 0
 
     def __iter__(self):
         return self

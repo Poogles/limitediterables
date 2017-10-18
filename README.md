@@ -2,6 +2,14 @@
 
 Basic library to rate limit how quickly you get the next value out of an iterable.
 
+## Install
+
+```sh
+git clone https://github.com/Poogles/limitediterables.git
+cd limitediterables && python setup.py install
+```
+
+
 ## Example
 
 ```python
@@ -14,3 +22,12 @@ for i in slow_iter:
 ```
 
 Should be useful for rate limiting against APIs or anything else that's sensitive to number of requests.
+
+## Dev
+
+```
+pip install pytest
+pytest
+```
+
+PRs accepted.
