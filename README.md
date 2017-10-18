@@ -1,4 +1,4 @@
-# Limited Iterables
+# Limited Iterables [![Build Status](https://travis-ci.org/Poogles/limitediterables.svg?branch=master)](https://travis-ci.org/Poogles/limitediterables)
 
 Basic library to rate limit how quickly you get the next value out of an iterable.
 
