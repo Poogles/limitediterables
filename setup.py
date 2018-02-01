@@ -1,7 +1,7 @@
 from setuptools import setup
 
-setup(name='Limited Iterables',
-      version='0.1',
+setup(name='limitediterables',
+      version='0.1.0',
       description='Rate limit your iterables.',
       url='https://github.com/Poogles/limitediterables',
       author='Sam Pegler',

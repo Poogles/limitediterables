@@ -5,8 +5,7 @@ Basic library to rate limit how quickly you get the next value out of an iterabl
 ## Install
 
 ```sh
-git clone https://github.com/Poogles/limitediterables.git
-cd limitediterables && python setup.py install
+pip install limitediterables
 ```
 
 
